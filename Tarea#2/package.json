@@ -1,0 +1,15 @@
+{
+  "name": "tarea2",
+  "version": "1.0.0",
+  "description": "Tarea de Universidad Cenfotec - Curso Comunicación de Información en la Web. Andrés Vargas Ramírez",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass": "node-sass -w sass/style.scss -o css/style.css --recursive"
+  },
+  "author": "Andrés Vargas",
+  "license": "MIT"
+}

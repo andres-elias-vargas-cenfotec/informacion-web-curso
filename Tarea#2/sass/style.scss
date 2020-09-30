@@ -1,0 +1,25 @@
+
+    // Information taken from https://dev.to/chrissiemhrk/how-to-setup-sass-in-your-project-2bo1
+
+    // Run in the console:
+    // 1) npm install -> this is going to take all the dependencies from package.json and install it locally
+    // 2) npm run sass -> Run and compiles the SASS in to CSS.
+
+//Fonts
+@import 'sections/fonts.scss';
+
+
+//Variables
+@import 'configuration/typography.scss';
+@import 'configuration/color.scss';
+@import 'configuration/responsive.scss';
+
+
+//Sections
+@import 'sections/header.scss';
+@import 'sections/hero.scss';
+@import 'sections/footer.scss';
+
+//Components
+@import 'components/forms.scss';
+@import 'components/buttons.scss';
