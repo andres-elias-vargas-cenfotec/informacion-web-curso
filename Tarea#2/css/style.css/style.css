@@ -1,2 +1,17 @@
-.test {
-  color: red; }
+.container-fluid {
+  padding: 0; }
+  .container-fluid .row {
+    margin: 0; }
+
+.header--pequenno {
+  padding: 20px 0; }
+
+.header--grande {
+  padding: 40px 0; }
+
+@media all and (max-width: 991px) {
+  #topMenu {
+    display: none; } }
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #000; }

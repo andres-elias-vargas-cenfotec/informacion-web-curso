@@ -1,0 +1,16 @@
+.header--pequenno{
+    padding: 20px 0;
+}
+.header--grande{
+    padding: 40px 0;
+}
+
+@media all and (max-width: $tablet-size){
+    #topMenu{
+        display: none;
+    }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #000;
+}
