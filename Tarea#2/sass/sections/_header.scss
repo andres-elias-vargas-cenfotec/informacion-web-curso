@@ -7,10 +7,80 @@ header {
   }
 
   #topMenu {
-    button {
-      &:hover {
-        background-color: $orange;
-        color: $white;
+    .navbar-brand {
+      @media screen and (max-width: $tablet-size) {
+        margin-left: 20%;
+      }
+
+      @media screen and (max-width: $tablet-little) {
+        margin-left: 8%;
+      }
+
+      @media screen and (max-width: $mobile-big) {
+        margin-left: 3%;
+        width: 30%;
+
+        img {
+            width: 100%;
+          }
+      }
+
+      @media screen and (max-width: $mobile-mid) {
+        margin-left: 8%;
+        width: 40%;
+
+        img {
+            width: 100%;
+          }
+      }
+
+      @media screen and (max-width: $mobile) {
+        margin-left: 2%;
+        width: 40%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .buttons-nav {
+      @media screen and (max-width: $mobile-mid) {
+        .nav-item {
+          margin-right: 0 !important;
+          font-size: 0.8rem;
+
+          &:first-child {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .navbar-collapse {
+      button {
+        &:hover {
+          background-color: $orange;
+          color: $white;
+        }
+      }
+
+      @media screen and (max-width: $tablet-size) {
+        flex-basis: 0;
+
+        .navbar-nav {
+          display: inline-block;
+        }
+      }
+    }
+
+    @media screen and (max-width: $tablet-size) {
+      .navbar-toggler {
+        background-color: $yellow;
+
+        .fa-bars {
+          color: $black;
+        }
       }
     }
   }
