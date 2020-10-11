@@ -1,3 +1,5 @@
+/*Tablet*/
+/*Mobile*/
 html {
   font-size: 16px;
   line-height: 20px; }
@@ -79,6 +81,10 @@ header #topMenu .navbar-collapse button:hover {
     background-color: #feca57; }
     header #topMenu .navbar-toggler .fa-bars {
       color: #222f3e; } }
+
+@media screen and (min-width: 0) {
+  header #topMenu {
+    overflow: visible; } }
 
 header #bottNav a {
   color: #feca57; }
