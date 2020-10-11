@@ -1,6 +1,8 @@
 'use strict';
 
 let bottom_Header = document.getElementById('bottNav');
+bottom_Header.classList.add('header--grande');
+
 
 const scrollFunction = () => {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
