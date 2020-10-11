@@ -1,16 +1,68 @@
-.header--pequenno{
-    padding: 20px 0;
-}
-.header--grande{
-    padding: 40px 0;
-}
-
-@media all and (max-width: $tablet-size){
-    #topMenu{
-        display: none;
+header {
+  .btn,
+  textarea {
+    &:active {
+      border: 1px solid $orange;
     }
+  }
+
+  #topMenu {
+    button {
+      &:hover {
+        background-color: $orange;
+        color: $white;
+      }
+    }
+  }
+
+  #bottNav {
+    a {
+      color: $yellow;
+
+      &:hover,
+      &:active {
+        color: $orange;
+      }
+    }
+
+    .dropdown {
+      &:hover {
+        .dropdown-menu {
+          display: block;
+
+          background-color: $black;
+          border: 1px solid $black;
+
+          a {
+            &:hover {
+              background-color: $black;
+            }
+          }
+        }
+      }
+    }
+
+    .form-inline {
+      position: relative;
+
+      button {
+        position: absolute;
+        right: 0.5rem;
+
+        &:hover {
+          background-color: $orange;
+          color: $white;
+        }
+      }
+    }
+  }
 }
 
-.navbar-dark .navbar-nav .nav-link {
-    color: #000;
+.header--pequenno {
+  transition: padding 0.8s ease;
+  padding: 1.35rem 0;
+}
+.header--grande {
+  transition: padding 0.8s ease;
+  padding: 2.8rem 0;
 }

@@ -1,7 +1,41 @@
-.container-fluid{
+html {
+  font-size: 16px;
+  line-height: 20px;
+
+  .container-fluid {
     padding: 0;
 
-    .row{
-        margin: 0;
+    .row {
+      margin: 0;
     }
+  }
+}
+
+.btn, a, .form-control, textarea{
+  &:focus{
+      outline: none;
+      box-shadow: none;
+  }
+}
+
+a, textarea{
+  &:focus{
+      border: none;
+  }
+}
+
+.form-control{
+  &:focus{
+    border: 1px solid $white;
+  }
+}
+
+/* BACKGROUND */
+.bg-black {
+  background-color: $black;
+}
+
+/* BUTTONS */
+.btn-yellow {
+  background-color: $yellow;
 }

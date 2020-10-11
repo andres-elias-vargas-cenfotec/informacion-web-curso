@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
     <!--
 
         **To Assign the CSS compiled from the SASS:
@@ -34,19 +38,19 @@
 
     <!-- Start: Header -->
     <header>
-        <nav id="topMenu" class="navbar navbar-expand-lg bg-dark d-none-md">
+        <nav id="topMenu" class="navbar navbar-expand-lg d-none-md py-1">
+            <a class="navbar-brand" href="#">
+                <img src="imgs/logo.png" alt="Cosevi">
+            </a>
             <div class="collapse navbar-collapse d-flex flex-row-reverse">
                 <ul class="navbar-nav">
-                    <button type="button" class="nav-item btn btn-success mr-3">Registrarse</button>
-                    <button type="button" class="nav-item btn btn-success">Iniciar Sesión</button>
+                    <button type="button" class="nav-item btn btn-yellow mr-3">Registrarse</button>
+                    <button type="button" class="nav-item btn btn-yellow">Iniciar Sesión</button>
                 </ul>
             </div>
         </nav>
 
-        <nav class="navbar navbar-expand-lg bg-white">
-            <a class="navbar-brand" href="#">
-                <img src="imgs/logo.png" alt="Cosevi">
-            </a>
+        <nav id="bottNav" class="navbar navbar-expand-lg bg-black px-3">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -55,30 +59,47 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#" active>Inicio <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Nosotros</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
+                            Servicios
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="#">Pago de servicios</a>
+                            <a class="dropdown-item" href="#">Trámites</a>
+                            <a class="dropdown-item" href="#">Asistencia Municipal</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Seguros
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Centros Educativos</a>
+                            <a class="dropdown-item" href="#">Empresas</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" href="#">Seguridad Virtual</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Normativa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Noticias</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-yellow my-2 my-sm-0" type="search">
+                        <i class="fas fa-search"></i>
+                    </button>
                 </form>
             </div>
         </nav>
@@ -118,7 +139,7 @@
 
     <!-- Extra configurations -->
     <!-- Scroll Efects -->
-    <!-- <script src="js/scroll-effect.js"></script> -->
+    <script src="js/scroll-effect.js"></script>
 </body>
 
 </html>
