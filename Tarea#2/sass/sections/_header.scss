@@ -83,6 +83,11 @@ header {
         }
       }
     }
+
+    @media screen and (min-width: $mobile-little){
+        overflow: visible;
+    }
+
   }
 
   #bottNav {
