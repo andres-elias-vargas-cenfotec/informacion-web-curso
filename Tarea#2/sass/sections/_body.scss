@@ -2,35 +2,112 @@ html {
   font-size: 16px;
   line-height: 20px;
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a,
+  button {
+    color: $black;
+  }
+
   .container-fluid {
     padding: 0;
 
     .row {
       margin: 0;
 
-      .col-12{
+      .col-12 {
         padding: 0;
+
+        #carouselHero {
+          h3 {
+            color: $white;
+          }
+        }
+
+        #iconic {
+          div.col-lg-3 {
+            &:first-child {
+              p {
+                margin-bottom: .8rem;
+
+                @media screen and (min-width: $mobile-big) and (max-width: $tablet-mid) {
+                  margin-bottom: 1.1rem;
+                }
+
+                @media screen and (min-width: $tablet) and (max-width: $tablet-size) {
+                  margin-bottom: 1.5rem;
+                }
+
+                @media screen and (min-width: $desktop-sm){
+                  margin-bottom: 1.9rem;
+                }
+
+                @media screen and (min-width: $desktop-md){
+                  margin-bottom: 1.6rem;
+                }
+              }
+            }
+            &:nth-child(2) {
+              p {
+                @media screen and (min-width: $tablet) and (max-width: $tablet-size) {
+                  margin-bottom: 2.5rem;
+                }
+                @media screen and (min-width: $desktop-md){
+                  margin-bottom: 1.5rem;
+                }
+              }
+            }
+            &:nth-child(3) {
+              p {
+                @media screen and (min-width: $desktop-md){
+                  margin-bottom: 1.7rem;
+                }
+              }
+            }
+            &:last-child {
+              p {
+                @media screen and (min-width: $desktop-md){
+                  margin-bottom: .6rem;
+                }
+              }
+            }
+          }
+          i {
+            font-size: 2.8rem;
+            line-height: 3.2rem;
+            color: $orange;
+          }
+        }
       }
     }
   }
 }
 
-.btn, a, .form-control, textarea{
-  &:focus{
-      outline: none;
-      box-shadow: none;
+.btn,
+a,
+.form-control,
+textarea {
+  &:focus {
+    outline: none;
+    box-shadow: none;
   }
 }
 
-a, textarea{
-  &:focus{
-      border: none;
+a,
+textarea {
+  &:focus {
+    border: none;
   }
 }
 
-.form-control{
-  &:focus{
-    border: 1px solid $white;
+.form-control {
+  &:focus {
+    border: 0.0625rem solid $white;
   }
 }
 
@@ -43,7 +120,11 @@ a, textarea{
 .btn-yellow {
   background-color: $yellow;
 
-  &:hover{
+  &:hover {
     background-color: $orange;
   }
+}
+
+button:active {
+  transform: translateY(0.0625rem);
 }

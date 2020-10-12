@@ -2,7 +2,7 @@ header {
   .btn,
   textarea {
     &:active {
-      border: 1px solid $orange;
+      border: 0.0625rem solid $orange;
     }
   }
 
@@ -21,8 +21,8 @@ header {
         width: 30%;
 
         img {
-            width: 100%;
-          }
+          width: 100%;
+        }
       }
 
       @media screen and (max-width: $mobile-mid) {
@@ -30,8 +30,8 @@ header {
         width: 40%;
 
         img {
-            width: 100%;
-          }
+          width: 100%;
+        }
       }
 
       @media screen and (max-width: $mobile) {
@@ -45,8 +45,8 @@ header {
     }
 
     .buttons-nav {
-      @media screen and (max-width: $mobile-mid) {
-        .nav-item {
+      .nav-item {
+        @media screen and (max-width: $mobile-mid) {
           margin-right: 0 !important;
           font-size: 0.8rem;
 
@@ -84,10 +84,9 @@ header {
       }
     }
 
-    @media screen and (min-width: $mobile-little){
-        overflow: visible;
+    @media screen and (min-width: $mobile-little) {
+      overflow: visible;
     }
-
   }
 
   #bottNav {
@@ -101,12 +100,18 @@ header {
     }
 
     .dropdown {
+      .dropdown-menu {
+        &.show {
+          background-color: $black !important;
+        }
+      }
+
       &:hover {
         .dropdown-menu {
           display: block;
 
-          background-color: $black;
-          border: 1px solid $black;
+          background-color: $black !important;
+          border: 0.0625rem solid $black;
 
           a {
             &:hover {
