@@ -7,6 +7,10 @@ html {
 
     .row {
       margin: 0;
+
+      .col-12{
+        padding: 0;
+      }
     }
   }
 }
@@ -38,4 +42,8 @@ a, textarea{
 /* BUTTONS */
 .btn-yellow {
   background-color: $yellow;
+
+  &:hover{
+    background-color: $orange;
+  }
 }
