@@ -14,6 +14,10 @@ html {
     color: $black;
   }
 
+  *{
+    box-sizing: border-box;
+  }
+
   .container-fluid {
     padding: 0;
 
@@ -35,11 +39,11 @@ html {
               p {
                 margin-bottom: .8rem;
 
-                @media screen and (min-width: $mobile-big) and (max-width: $tablet-mid) {
+                @media screen and (min-width: $mobile-sm-lg) and (max-width: $tablet-md) {
                   margin-bottom: 1.1rem;
                 }
 
-                @media screen and (min-width: $tablet) and (max-width: $tablet-size) {
+                @media screen and (min-width: $tablet) and (max-width: $tablet-lg) {
                   margin-bottom: 1.5rem;
                 }
 
@@ -54,7 +58,7 @@ html {
             }
             &:nth-child(2) {
               p {
-                @media screen and (min-width: $tablet) and (max-width: $tablet-size) {
+                @media screen and (min-width: $tablet) and (max-width: $tablet-lg) {
                   margin-bottom: 2.5rem;
                 }
                 @media screen and (min-width: $desktop-md){
@@ -81,6 +85,18 @@ html {
             font-size: 2.8rem;
             line-height: 3.2rem;
             color: $orange;
+          }
+        }
+
+        #profile{
+          margin-top: -10%;
+
+          @media screen and (min-width: $desktop-sm) {
+            margin-top: -5%;
+          }
+
+          @media screen and (min-width: $desktop-md) {
+            margin-top: 0;
           }
         }
       }

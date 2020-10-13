@@ -8,15 +8,15 @@ header {
 
   #topMenu {
     .navbar-brand {
-      @media screen and (max-width: $tablet-size) {
+      @media screen and (max-width: $tablet-lg) {
         margin-left: 20%;
       }
 
-      @media screen and (max-width: $tablet-little) {
+      @media screen and (max-width: $tablet-sm) {
         margin-left: 8%;
       }
 
-      @media screen and (max-width: $mobile-big) {
+      @media screen and (max-width: $mobile-sm-lg) {
         margin-left: 3%;
         width: 30%;
 
@@ -25,7 +25,7 @@ header {
         }
       }
 
-      @media screen and (max-width: $mobile-mid) {
+      @media screen and (max-width: $mobile-sm-md) {
         margin-left: 8%;
         width: 40%;
 
@@ -34,7 +34,7 @@ header {
         }
       }
 
-      @media screen and (max-width: $mobile) {
+      @media screen and (max-width: $mobile-sm) {
         margin-left: 2%;
         width: 40%;
 
@@ -46,7 +46,7 @@ header {
 
     .buttons-nav {
       .nav-item {
-        @media screen and (max-width: $mobile-mid) {
+        @media screen and (max-width: $mobile-sm-md) {
           margin-right: 0 !important;
           font-size: 0.8rem;
 
@@ -65,7 +65,7 @@ header {
         }
       }
 
-      @media screen and (max-width: $tablet-size) {
+      @media screen and (max-width: $tablet-lg) {
         flex-basis: 0;
 
         .navbar-nav {
@@ -74,7 +74,7 @@ header {
       }
     }
 
-    @media screen and (max-width: $tablet-size) {
+    @media screen and (max-width: $tablet-lg) {
       .navbar-toggler {
         background-color: $yellow;
 
@@ -84,7 +84,7 @@ header {
       }
     }
 
-    @media screen and (min-width: $mobile-little) {
+    @media screen and (min-width: $mobile-sm-cero) {
       overflow: visible;
     }
   }
