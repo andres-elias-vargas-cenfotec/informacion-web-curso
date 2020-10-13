@@ -16,7 +16,7 @@ footer {
         img{
             width: 50%;
 
-            @media screen and (min-width: $mobile-big) and (max-width: $tablet-mid){
+            @media screen and (min-width: $mobile-sm-lg) and (max-width: $tablet-md){
                 width: 30%;
             }
         }
