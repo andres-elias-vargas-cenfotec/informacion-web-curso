@@ -1,7 +1,7 @@
 .carousel-caption{
     top: 35%;
 
-    @media screen and (min-width: $mobile-sm-lg) and (max-width: $tablet-md) {
+    @media screen and (min-width: $mobile-lg) and (max-width: $tablet-md) {
         top: 20%;
     }
 }

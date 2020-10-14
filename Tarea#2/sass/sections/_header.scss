@@ -1,4 +1,11 @@
 header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  background-color: $white;
+
   .btn,
   textarea {
     &:active {
@@ -6,34 +13,88 @@ header {
     }
   }
 
+  #menu-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    margin: 0.8rem 0 0 0.5rem;
+    z-index: 1000;
+
+    @media screen and (min-width: $mobile-md) {
+      margin-top: 1.5rem;
+    }
+
+    @media screen and (min-width: $mobile-lg) {
+      margin-top: 1.7rem;
+    }
+
+    @media screen and (min-width: $tablet-sm) {
+      margin-top: 1.8rem;
+    }
+
+    @media screen and (min-width: $tablet-md) {
+      margin-top: 2rem;
+    }
+
+    @media screen and (min-width: $tablet) {
+      margin-top: 2.2rem;
+    }
+
+    .navbar-collapse {
+      width: 100%;
+      padding: 1rem 0 2rem 1rem;
+      margin: 0.5rem 0 0 -0.5rem;
+      background-color: $black;
+
+      @media screen and (min-width: $tablet-sm) {
+        width: 60%;
+        margin-top: 2.38rem !important;
+      }
+
+      @media screen and (min-width: $tablet-md) {
+        width: 40%;
+        margin-top: 2.31rem !important;
+      }
+
+      @media screen and (min-width: $tablet) {
+        margin-top: 2rem !important;
+      }
+
+      @media screen and (min-width: $tablet) {
+        margin-top: 2.1rem !important;
+      }
+
+      a {
+        color: $yellow;
+        &:hover {
+          color: $orange;
+        }
+      }
+      .dropdown-menu.show {
+        background-color: $black;
+        margin-left: -0.1rem;
+        border-color: $yellow;
+      }
+      .form-inline {
+        width: 200px;
+        position: relative;
+
+        button {
+          position: absolute;
+          left: 10rem;
+
+          &:hover {
+            background-color: $orange;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
   #topMenu {
     .navbar-brand {
-      @media screen and (max-width: $tablet-lg) {
-        margin-left: 20%;
-      }
-
-      @media screen and (max-width: $tablet-sm) {
-        margin-left: 8%;
-      }
-
-      @media screen and (max-width: $mobile-sm-lg) {
-        margin-left: 3%;
-        width: 30%;
-
-        img {
-          width: 100%;
-        }
-      }
-
-      @media screen and (max-width: $mobile-sm-md) {
-        margin-left: 8%;
-        width: 40%;
-
-        img {
-          width: 100%;
-        }
-      }
-
       @media screen and (max-width: $mobile-sm) {
         margin-left: 2%;
         width: 40%;
@@ -42,11 +103,37 @@ header {
           width: 100%;
         }
       }
+
+      @media screen and (max-width: $mobile-md) {
+        margin-left: 20%;
+        width: 40%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      @media screen and (max-width: $mobile-lg) {
+        margin-left: 3%;
+        width: 30%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      @media screen and (max-width: $tablet-sm) {
+        margin-left: 8%;
+      }
+
+      @media screen and (max-width: $tablet-lg) {
+        margin-left: 20%;
+      }
     }
 
     .buttons-nav {
       .nav-item {
-        @media screen and (max-width: $mobile-sm-md) {
+        @media screen and (max-width: $mobile-md) {
           margin-right: 0 !important;
           font-size: 0.8rem;
 

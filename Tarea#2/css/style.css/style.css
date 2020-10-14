@@ -1,0 +1,342 @@
+html {
+  font-size: 16px;
+  line-height: 20px; }
+  html h1,
+  html h2,
+  html h3,
+  html h4,
+  html h5,
+  html h6,
+  html p,
+  html a,
+  html button {
+    color: #222F3E; }
+  html * {
+    box-sizing: border-box; }
+  html .container-fluid {
+    padding: 6rem 0 0 0;
+    position: relative; }
+    html .container-fluid .row {
+      margin: 0; }
+      html .container-fluid .row .col-12 {
+        padding: 0; }
+        html .container-fluid .row .col-12 #carouselHero h3 {
+          color: #FAFAFA; }
+
+#iconic div.col-lg-3:first-child p {
+  margin-bottom: 0.8rem; }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    #iconic div.col-lg-3:first-child p {
+      margin-bottom: 1.1rem; } }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    #iconic div.col-lg-3:first-child p {
+      margin-bottom: 1.5rem; } }
+  @media screen and (min-width: 992px) {
+    #iconic div.col-lg-3:first-child p {
+      margin-bottom: 1.9rem; } }
+  @media screen and (min-width: 1200px) {
+    #iconic div.col-lg-3:first-child p {
+      margin-bottom: 1.6rem; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #iconic div.col-lg-3:nth-child(2) p {
+    margin-bottom: 1.5rem; } }
+
+@media screen and (min-width: 1200px) {
+  #iconic div.col-lg-3:nth-child(2) p {
+    margin-bottom: 1.5rem; } }
+
+@media screen and (min-width: 1200px) {
+  #iconic div.col-lg-3:nth-child(3) p {
+    margin-bottom: 1.7rem; } }
+
+@media screen and (min-width: 1200px) {
+  #iconic div.col-lg-3:last-child p {
+    margin-bottom: 0.6rem; } }
+
+#iconic i {
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  color: #FF9F43; }
+
+@media screen and (min-width: 425px) {
+  #iconic {
+    margin-bottom: 5%; } }
+
+@media screen and (min-width: 425px) {
+  #iconic div:nth-child(1),
+  #iconic div:nth-child(2),
+  #iconic div:nth-child(3),
+  #iconic div:nth-child(4) {
+    width: 80%;
+    margin: 0 auto; } }
+
+@media screen and (min-width: 576px) {
+  #iconic div:nth-child(1),
+  #iconic div:nth-child(2),
+  #iconic div:nth-child(3),
+  #iconic div:nth-child(4) {
+    width: 100%;
+    margin: 0; } }
+
+@media screen and (min-width: 767px) {
+  #iconic div:nth-child(1) h3 {
+    font-size: 1.72rem; } }
+
+@media screen and (min-width: 634px) {
+  #iconic div:nth-child(4) h3 {
+    font-size: 1.55rem; } }
+
+@media screen and (min-width: 767px) {
+  #iconic div:nth-child(4) h3 {
+    font-size: 1.75rem; } }
+
+#profile {
+  margin-top: -10%; }
+  @media screen and (min-width: 425px) {
+    #profile .card {
+      width: 80%;
+      margin: 0 auto; } }
+  @media screen and (min-width: 576px) {
+    #profile .card {
+      width: 100%;
+      margin: 0; } }
+  @media screen and (min-width: 767px) {
+    #profile .card {
+      width: 80%;
+      margin: 0 auto; } }
+  @media screen and (min-width: 992px) {
+    #profile .card {
+      width: 90%;
+      margin: 0 auto; } }
+  @media screen and (min-width: 992px) {
+    #profile {
+      margin-top: -5%; } }
+  @media screen and (min-width: 1200px) {
+    #profile {
+      margin-top: 0; } }
+  @media screen and (min-width: 576px) {
+    #profile div:nth-child(3) button {
+      margin-top: 1.5rem; } }
+  @media screen and (min-width: 634px) {
+    #profile div:nth-child(3) button {
+      margin-top: 0; } }
+  @media screen and (min-width: 767px) {
+    #profile div:nth-child(4) button {
+      margin-top: 0; } }
+  @media screen and (min-width: 634px) {
+    #profile div:nth-child(5) button {
+      margin-top: 1.5rem; } }
+  @media screen and (min-width: 767px) {
+    #profile div:nth-child(5) button {
+      margin-top: 0rem; } }
+
+@media screen and (min-width: 425px) {
+  #news div:nth-child(2),
+  #news div:nth-child(3),
+  #news div:nth-child(4) {
+    width: 80%;
+    margin: 0 auto; } }
+
+@media screen and (min-width: 576px) {
+  #news div:nth-child(2),
+  #news div:nth-child(3),
+  #news div:nth-child(4) {
+    width: 100%;
+    margin: 0; } }
+
+.btn:focus,
+a:focus,
+.form-control:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: none; }
+
+a:focus,
+textarea:focus {
+  border: none; }
+
+.form-control:focus {
+  border: 0.0625rem solid #FAFAFA; }
+
+/* BACKGROUND */
+.bg-black {
+  background-color: #222F3E; }
+
+/* BUTTONS */
+.btn-yellow {
+  background-color: #FECA57; }
+  .btn-yellow:hover {
+    background-color: #FF9F43; }
+
+button:active {
+  transform: translateY(0.0625rem); }
+
+header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  background-color: #FAFAFA; }
+  header .btn:active,
+  header textarea:active {
+    border: 0.0625rem solid #FF9F43; }
+  header #menu-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    margin: 0.8rem 0 0 0.5rem;
+    z-index: 1000; }
+    @media screen and (min-width: 425px) {
+      header #menu-mobile {
+        margin-top: 1.5rem; } }
+    @media screen and (min-width: 576px) {
+      header #menu-mobile {
+        margin-top: 1.7rem; } }
+    @media screen and (min-width: 634px) {
+      header #menu-mobile {
+        margin-top: 1.8rem; } }
+    @media screen and (min-width: 767px) {
+      header #menu-mobile {
+        margin-top: 2rem; } }
+    @media screen and (min-width: 768px) {
+      header #menu-mobile {
+        margin-top: 2.2rem; } }
+    header #menu-mobile .navbar-collapse {
+      width: 100%;
+      padding: 1rem 0 2rem 1rem;
+      margin: 0.5rem 0 0 -0.5rem;
+      background-color: #222F3E; }
+      @media screen and (min-width: 634px) {
+        header #menu-mobile .navbar-collapse {
+          width: 60%;
+          margin-top: 2.38rem !important; } }
+      @media screen and (min-width: 767px) {
+        header #menu-mobile .navbar-collapse {
+          width: 40%;
+          margin-top: 2.31rem !important; } }
+      @media screen and (min-width: 768px) {
+        header #menu-mobile .navbar-collapse {
+          margin-top: 2rem !important; } }
+      @media screen and (min-width: 768px) {
+        header #menu-mobile .navbar-collapse {
+          margin-top: 2.1rem !important; } }
+      header #menu-mobile .navbar-collapse a {
+        color: #FECA57; }
+        header #menu-mobile .navbar-collapse a:hover {
+          color: #FF9F43; }
+      header #menu-mobile .navbar-collapse .dropdown-menu.show {
+        background-color: #222F3E;
+        margin-left: -0.1rem;
+        border-color: #FECA57; }
+      header #menu-mobile .navbar-collapse .form-inline {
+        width: 200px;
+        position: relative; }
+        header #menu-mobile .navbar-collapse .form-inline button {
+          position: absolute;
+          left: 10rem; }
+          header #menu-mobile .navbar-collapse .form-inline button:hover {
+            background-color: #FF9F43;
+            color: #FAFAFA; }
+  @media screen and (max-width: 320px) {
+    header #topMenu .navbar-brand {
+      margin-left: 2%;
+      width: 40%; }
+      header #topMenu .navbar-brand img {
+        width: 100%; } }
+  @media screen and (max-width: 425px) {
+    header #topMenu .navbar-brand {
+      margin-left: 20%;
+      width: 40%; }
+      header #topMenu .navbar-brand img {
+        width: 100%; } }
+  @media screen and (max-width: 576px) {
+    header #topMenu .navbar-brand {
+      margin-left: 3%;
+      width: 30%; }
+      header #topMenu .navbar-brand img {
+        width: 100%; } }
+  @media screen and (max-width: 634px) {
+    header #topMenu .navbar-brand {
+      margin-left: 8%; } }
+  @media screen and (max-width: 991px) {
+    header #topMenu .navbar-brand {
+      margin-left: 20%; } }
+  @media screen and (max-width: 425px) {
+    header #topMenu .buttons-nav .nav-item {
+      margin-right: 0 !important;
+      font-size: 0.8rem; }
+      header #topMenu .buttons-nav .nav-item:first-child {
+        display: none; } }
+  header #topMenu .navbar-collapse button:hover {
+    background-color: #FF9F43;
+    color: #FAFAFA; }
+  @media screen and (max-width: 991px) {
+    header #topMenu .navbar-collapse {
+      flex-basis: 0; }
+      header #topMenu .navbar-collapse .navbar-nav {
+        display: inline-block; } }
+  @media screen and (max-width: 991px) {
+    header #topMenu .navbar-toggler {
+      background-color: #FECA57; }
+      header #topMenu .navbar-toggler .fa-bars {
+        color: #222F3E; } }
+  @media screen and (min-width: 0) {
+    header #topMenu {
+      overflow: visible; } }
+  header #bottNav a {
+    color: #FECA57; }
+    header #bottNav a:hover, header #bottNav a:active {
+      color: #FF9F43; }
+  header #bottNav .dropdown .dropdown-menu.show {
+    background-color: #222F3E !important; }
+  header #bottNav .dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: #222F3E !important;
+    border: 0.0625rem solid #222F3E; }
+    header #bottNav .dropdown:hover .dropdown-menu a:hover {
+      background-color: #222F3E; }
+  header #bottNav .form-inline {
+    position: relative; }
+    header #bottNav .form-inline button {
+      position: absolute;
+      right: 0.5rem; }
+      header #bottNav .form-inline button:hover {
+        background-color: #FF9F43;
+        color: #FAFAFA; }
+
+.header--pequenno {
+  transition: padding 0.8s ease;
+  padding: 1.35rem 0; }
+
+.header--grande {
+  transition: padding 0.8s ease;
+  padding: 2.8rem 0; }
+
+.carousel-caption {
+  top: 35%; }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    .carousel-caption {
+      top: 20%; } }
+
+footer .container-fluid {
+  background-color: #F5F5F5; }
+  footer .container-fluid a {
+    color: #222F3E;
+    text-decoration: none; }
+    footer .container-fluid a:hover, footer .container-fluid a:active {
+      color: #FF9F43; }
+  footer .container-fluid .imagen-gov img {
+    width: 50%; }
+    @media screen and (min-width: 576px) and (max-width: 767px) {
+      footer .container-fluid .imagen-gov img {
+        width: 30%; } }
+  footer .container-fluid .fa-facebook-square {
+    font-size: 1.8rem;
+    line-height: 2.2rem; }
+
+footer .footer-copyright {
+  background-color: #222F3E;
+  color: #FAFAFA; }
